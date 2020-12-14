@@ -18,7 +18,7 @@
 #include <stdlib.h>
 
 #define WLAN_SSID               "301"
-#define WLAN_PASSWORD           "qing14551"
+#define WLAN_PASSWORD           "xxxxxxxxxxx"
 //#define WLAN_SSID               "Honor 8C"
 //#define WLAN_PASSWORD           "12345678"
 #define NET_READY_TIME_OUT       (rt_tick_from_millisecond(15 * 1000))
@@ -40,17 +40,17 @@ int main(void)
     //set LED0 pin mode to output 
     rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
 	  
-     wifi_app();//É¨Ãè Á¬½Ó ÅäÖÃ×Ô¶¯Á¬½Ó 
+     wifi_app();//æ‰«æ è¿æ¥ é…ç½®è‡ªåŠ¨è¿æ¥ 
     
 	     rt_thread_mdelay(500);
 	      rt_thread_mdelay(500);
 	    rt_thread_mdelay(500);
 	      rt_thread_mdelay(500);
-	   //moto_init();//³õÊ¼»¯ Ğ¡³µ¸÷×é¼ş£¬
+	   //moto_init();//åˆå§‹åŒ– å°è½¦å„ç»„ä»¶ï¼Œ
 	   moto_sample();
 	
-    // telnet_server();//Æô¶¯telnet 
-	 //  wifi_app();//É¨Ãè Á¬½Ó ÅäÖÃ×Ô¶¯Á¬½Ó 
+    // telnet_server();//å¯åŠ¨telnet 
+	 //  wifi_app();//æ‰«æ è¿æ¥ é…ç½®è‡ªåŠ¨è¿æ¥ 
     while (1)//(count++) < 9)
     {
         rt_pin_write(LED0_PIN, PIN_HIGH);
